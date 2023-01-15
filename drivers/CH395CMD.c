@@ -446,7 +446,7 @@ void CH395EnablePing(rt_uint8_t enable)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void CH395SendData(rt_uint8_t sockindex,rt_uint8_t *databuf,rt_uint16_t len)
+void CH395SendData(rt_uint8_t sockindex,char *databuf,rt_uint16_t len)
 {
     rt_uint16_t i;
 

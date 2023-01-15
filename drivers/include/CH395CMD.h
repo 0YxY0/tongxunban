@@ -58,7 +58,7 @@ void CH395SetSocketIPRAWProto(rt_uint8_t sockindex,rt_uint8_t prototype);       
 
 void CH395SetRecvThresLen(rt_uint8_t sockindex,rt_uint16_t len);                    /* 设置socket n的接收中断阀值 */
 
-void CH395SendData(rt_uint8_t sockindex,rt_uint8_t *databuf,rt_uint16_t len);       /* 向socket n的发送缓冲区写数据 */
+void CH395SendData(rt_uint8_t sockindex,char *databuf,rt_uint16_t len);       /* 向socket n的发送缓冲区写数据 */
 
 rt_uint16_t CH395GetRecvLength(rt_uint8_t sockindex);                               /* 获取socket n的接收长度 */
 

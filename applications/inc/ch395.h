@@ -44,4 +44,18 @@ struct _SOCK_INF
     rt_uint8_t  *pSend;                                              /* 发送指针 */
 };
 
+/* CH395相关定义 */
+extern const rt_uint8_t CH395MACAddr[6];
+extern const rt_uint8_t CH395IPAddr[4];                              /* CH395IP地址 */
+extern const rt_uint8_t CH395GWIPAddr[4];                            /* CH395网关 */
+extern const rt_uint8_t CH395IPMask[4];                              /* CH395子网掩码 */
+extern const rt_uint8_t DestIPAddr[4];                               /* 目的IP */
+
+
+void CH395GlobalInterrupt(void);
+
+void CH395SocketInitOpen( );
+
+void mDelaymS(rt_uint8_t ms);
+
 #endif /* APPLICATIONS_INC_CH395_H_ */
